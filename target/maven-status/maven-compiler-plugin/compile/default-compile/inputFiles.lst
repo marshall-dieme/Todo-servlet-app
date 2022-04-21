@@ -1,6 +1,11 @@
+/home/marshall/Documents/intelliJ/first_web_app/src/main/java/servlets/ChangeStatusServlet.java
+/home/marshall/Documents/intelliJ/first_web_app/src/main/java/servlets/WelcomeServlet.java
 /home/marshall/Documents/intelliJ/first_web_app/src/main/java/servlets/TodoServlet.java
 /home/marshall/Documents/intelliJ/first_web_app/src/main/java/servlets/DeleteTodoServlet.java
+/home/marshall/Documents/intelliJ/first_web_app/src/main/java/filter/AuthFilter.java
+/home/marshall/Documents/intelliJ/first_web_app/src/main/java/servlets/LogoutServlet.java
 /home/marshall/Documents/intelliJ/first_web_app/src/main/java/service/ServletService.java
 /home/marshall/Documents/intelliJ/first_web_app/src/main/java/servlets/UpdateTodoServlet.java
 /home/marshall/Documents/intelliJ/first_web_app/src/main/java/servlets/LoginServlet.java
 /home/marshall/Documents/intelliJ/first_web_app/src/main/java/model/Todo.java
+/home/marshall/Documents/intelliJ/first_web_app/src/main/java/service/AuthService.java

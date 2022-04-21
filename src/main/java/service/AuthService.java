@@ -16,12 +16,12 @@ public class AuthService {
             throws IOException, ServletException {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
-
         if (username.equals("marshall") && password.equals("secret")) {
             request.getSession().setAttribute("username", username);
-            response.sendRedirect("/todos.do");
+            response.sendRedirect("/welcome.do");
         }else {
             request.setAttribute("errorMessage", "Invalid Credentials");
+            request.setAttribute("message", "Your credentials are incorrect. Try again");
             request.getRequestDispatcher("/WEB-INF/views/login.jsp")
                     .forward(request, response);
         }

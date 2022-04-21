@@ -7,3 +7,5 @@ servlets/UpdateTodoServlet.class
 servlets/LogoutServlet.class
 servlets/TodoServlet.class
 service/AuthService.class
+servlets/WelcomeServlet.class
+servlets/ChangeStatusServlet.class

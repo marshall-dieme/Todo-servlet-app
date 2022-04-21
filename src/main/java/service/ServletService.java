@@ -26,7 +26,7 @@ public class ServletService {
                                HttpServletResponse response) throws ServletException, IOException {
 
         request.setAttribute("todos", todos);
-        request.getRequestDispatcher("/WEB-INF/views/welcome.jsp")
+        request.getRequestDispatcher("/WEB-INF/views/todo-list.jsp")
                 .forward(request, response);
     }
 
@@ -83,6 +83,16 @@ public class ServletService {
         }
 
         todos.set(todos.indexOf(todo), newTodo);
+
+        httpServletResponse.sendRedirect("/todos.do");
+    }
+
+    public void markAsDone(HttpServletRequest httpServletRequest,
+                           HttpServletResponse httpServletResponse) throws IOException {
+        Todo todo = new Todo();
+        todo.setName(httpServletRequest.getParameter("name"));
+
+        todos.get(todos.indexOf(todo)).setStatus(!todos.get(todos.indexOf(todo)).isStatus());
 
         httpServletResponse.sendRedirect("/todos.do");
     }
